@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+}
+
+/* NAVBAR */
+.navbar{
+    position: fixed !important;
+    top: 0!important;
+    height: 55px;
+    width: 100%;
+    z-index: 1;
+}
+
+/* logo */
+.logo{
+    margin-left: 10px;
+    height: 21px;
+    width: 90%;                 
+}
+#navbarNavDropdown{
+    font-size: 14px;
+}
+
+/* Nav-items Hover */
+.navbar-nav .nav-item :hover{
+    color: #F14949 !important;
+
+}
+
+/* Dropdown-items */
+#navbar-nav .dropdown-menu{
+    background-color: #F14949 !important;
+    border-radius: 0;
+    border-bottom: 3px solid #000;
+}
+
+.dropdown-item{
+    color: white !important;
+    transition: .6s ease-in !important;
+}
+
+.dropdown-item:hover {
+    background-color: #F14949 !important;
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; 
+}
+
+.navbar-nav .dropdown-menu .dropdown-item:hover {
+    color: #000 !important; 
+}
+/* BANNER PICTURE */
+.banner{
+    width: 100%;
+}
+
+/* ROTATE CONTENT SECTION */
+.rt{
+    min-height: 770px;
+}
+.rotate{
+    position: relative;
+}
+.rotate img{
+    max-height: 450px;
+    animation: rotate 1s linear infinite;
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -1s);
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+}
+@keyframes rotate{
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.appy-font{
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+}
+.rotate p{
+    font-family: 'Eksell Display TRIAL', sans-serif;
+    font-size: 60px;
+    font-weight: 800;
+}
+.para p{
+    font-size: 18px;
+    margin: 120px 100px 30px 100px;
+    font-weight: 600;
+}
+.para .fb{
+    margin-left: 100px;
+}
+.para img{
+    width: 27px; 
+    height: auto;
+}
+
+/* FOOTER */
+.footer p{
+    font-size: 12px;
+}
+.footer a{
+    text-decoration: none; 
+    color: inherit;
+}
+.footer img{
+    width: 20px; 
+    height: auto;
+}
+footer a:hover {
+    color: #F14949 !important;
+}
+footer a img:hover{
+    color: #F14949 !important;
+}
+
+@media (max-width:1200px) {
+
+    .navbar{
+    font-size: 14px;
+}
+.brands_div
+{
+    flex-direction: column;
+}
+}
